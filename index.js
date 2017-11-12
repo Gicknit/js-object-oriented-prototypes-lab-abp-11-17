@@ -1,24 +1,24 @@
-function boardMembers(name, homeState, training){
+function boardMember(name, homeState, training){
   this.name = name
   this.homeState = homeState
   this.training = training
 
   //Change this to user.prototype//
-  boardMembers.prototype.veto = function(){
+  boardMember.prototype.veto = function(){
     return 'No, I must disagree'
   }
-  boardMembers.prototype.approve = function(){
+  boardMember.prototype.approve = function(){
     return 'You can do that!'
   }
-  boardMembers.prototype.doCharity = function(){
+  boardMember.prototype.doCharity = function(){
     return "I like to help people."
   }
 
-  boardMembers.prototype.releasePressStatement = function(){
+  boardMember.prototype.releasePressStatement = function(){
     return "You will see great things from Scuber."
   }
 
-  boardMembers.prototype.sayHi = function(){
+  boardMember.prototype.sayHi = function(){
     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
 }
