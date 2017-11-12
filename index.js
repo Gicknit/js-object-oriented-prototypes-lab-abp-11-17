@@ -3,7 +3,7 @@ function BoardMember(name, homeState, training){
   this.homeState = homeState
   this.training = training
 
-  user.prototype.veto = function(){
+  this.veto = function(){
     return 'No, I must disagree'
   }
   this.approve = function(){
@@ -21,3 +21,6 @@ function BoardMember(name, homeState, training){
     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
 }
+
+polishedBoardMember = new BoardMember("Mr. Polished", "New York", "law")
+backSlappingGene = new BoardMember("Mr. Gene", "Delaware", "business")
